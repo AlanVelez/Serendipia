@@ -1,0 +1,669 @@
+/* Tipografias */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Estilos predeterminados */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    /* font-family: 'PT Serif', serif; */
+}
+
+/*Menu Hamburguesa*/
+.menu-hamburguesa{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: #101820;
+    background: rgba(16, 24, 32, 0.9);
+    transition: 0.5s;
+} 
+
+.menu-hamburguesa > ion-icon{
+    position: absolute;
+    right: 45px;
+    top: 10px;
+    color: #D2B467;
+
+}
+
+.contenido-menu{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    margin: 10px;
+    font-size: 24px;
+    background:transparent;
+}
+
+.contenido-menu a{
+    text-decoration: none;
+    color: #D2B467;
+    margin: 10px;
+    font-weight: 600;
+    background: transparent;
+}
+
+.contenido-menu a:hover{
+    color:#f2f2f2;
+}
+
+ion-icon{
+    font-size: 28px;
+    color: #fff;
+    margin: 10px;
+}
+
+/* cabezera con menu */
+.menu-header{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.logo{
+    width:92%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 5%;
+    margin-right: 130px;
+}
+
+.contenedor-menu{
+    display: flex;
+    justify-content: right;
+    width: 8%;
+}
+
+.homepage{
+    background: linear-gradient(to bottom, rgba(16, 24, 32, 0), #101820), url("../img/fondoweb-min.jpg");
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+}
+
+/* Fondo de main */
+.principal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(16, 24, 32, 0.7);
+
+}
+
+/* Slogan y nombre de la marca en main */
+.contenido{
+    height: 80vh;
+}
+.contenido, .contenido h2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+
+.contenido h2{
+    text-align: center;
+    font-size: 112px;
+    font-family: 'PT Serif', serif;
+    font-weight:normal;
+    font-style: normal;
+    color: #D2B467;
+    margin-top: 0;
+}
+
+.linea-serendipia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px 40px 0px 40px;
+    padding-left: 60px;
+    width: 80%;
+}
+.linea-serendipia h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.linea{
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+/* redes sociales header */
+.siguenos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.siguenos a > ion-icon{
+    margin-left: 5px;
+}
+/* menu scroll vertical */
+/* scroll menu */
+.container-scroll-menu{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    background-color: transparent;
+  }
+  .container-scroll-menu .circle{
+      border-radius: 100%;
+      background: rgba(210, 180, 103, 0.4);
+      display: block;
+      width: 14px;
+      height: 14px;
+      margin-bottom: 15px;
+      border: 2px solid rgba(210,180,103,0);
+      transition: all 0.3s;
+      overflow: hidden;
+  }
+  .circle:hover{
+    border: 2px solid rgba(210,180,103,0.8);
+  }
+  
+  .vertical-line {
+    transition: 1.5s all cubic-bezier(0.23, 1, 0.32, 1);
+    transition-delay: 0.5s;
+    background: rgba(210,180,103,0.8);
+    position: absolute;
+    top: 300px;
+    width: 2px;
+    height: 380%;
+    /* height: 200px; */
+    right: 28px;
+  }
+
+/* servicios  */
+
+.services{
+    height: 100vh;
+    width: 100%;
+    background-color: #101820;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.titulo-servicios h2{
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #D2B467;
+    font-size: 24px;
+}
+.titulo-servicios .linea{
+    background-color: #D2B467;
+    margin: 20px;
+}
+
+/* Slide de servicios */
+.mySlides {
+    display: none;
+    height: 70vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+}
+
+
+/* The dots/bullets/indicators */
+.dot{
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.titulo-slide{
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+    font-style: italic;
+}
+.container-slide, .contenido-slide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.texto-slide{
+    font-size: 36px;
+    padding: 20px;
+}
+.imagenes-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagenes-slide img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+/* menu del slideshow */
+.menu-slide{
+    height: 40px;
+    width: 100%;
+    text-align: center; 
+}
+.circle-enlace span{
+    border-radius: 100%;
+    background: rgba(255,255,255,0.6);
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgba(255,255,255,0);
+}
+.circle-enlace span:hover{
+    border: 1px solid rgba(255,255,255,1);
+
+}
+
+
+/* conteendor de acerca de y frase */
+.recomendaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-image: linear-gradient(rgba(16,24,32,1), rgba(16, 24, 32, 0.7), rgba(16,24,32,1)), url("../img/buda.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* frase motivacion */
+.recomendaciones .frase{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    
+
+}
+.recomendaciones .frase img{
+    width: 100px;
+    margin: 20px;
+    
+}
+
+.recomendaciones .frase p{
+    font-size: 18px;
+    margin: 10px;
+    color: #D2B467;
+    /* font-family:'PT Serif', serif; */
+    font-weight: 500;
+    
+}
+
+/* acerca de */
+.aboutus{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedor-about{
+    height: 100vh;
+    width: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-about p{
+    margin: 100px 50px 50px 50px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+
+/* contacto seccion */
+.contacto{
+    width: 100%;
+    height: 100vh;
+    background-color: #101820;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contacto .titulo-servicios{
+    padding: 10px;
+}
+
+.titulo-servicios h2{
+    font-weight: 600;    
+}
+.contacto-seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    
+}
+
+
+
+.formulario, .texto-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-form{
+    max-width: 30%;
+    text-align: center;
+    height: 60vh;
+    margin-right: 5%;
+
+}
+.texto-form p{
+    font-size: 16px;
+    margin: 10px;
+    color: #D2B467;
+}
+
+.texto-form h3{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.formulario{
+    border-radius: 5px;
+    box-shadow: 18px 11px 30px 8px rgba(0,0,0,0.30);
+    padding: 20px;
+    width: 50%;
+    
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #fff;
+  }
+  
+  input[type=submit] {
+    background-color: #D2B467;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #f7d682;
+  }
+
+
+  /* footer */
+.pie-pagina{
+    height: 50vh;
+    background-color: #101820;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #D2B467;
+  }
+  footer .containerfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  
+    padding: 30px;
+  }
+  .containerfooter .onfooter{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 55px; 
+    width: 25%;
+    text-align: left;
+  }
+  .onfooter h3{
+    font-weight: 500;
+  }
+  .onfooter a{
+    text-decoration: none;
+    color: #D2B467;
+  }
+  .underfooter{
+    text-align: center;
+    margin: 40px;
+  }
+  
+
+@media only screen and (max-width: 768px) {
+    /* cabezera con menu */
+    .menu-header{
+        max-width: 100%;
+        height: 10%;
+    }
+    .logo{
+        width:70%;
+    }
+    .logo img{
+        width: 50px;
+        margin-right: 40px;
+    }
+    .contenido{
+        height: 60vh;
+    }
+    .contenido h2{
+        font-size: 64px;
+        margin: auto;
+        text-align: center;
+    }
+    .linea-serendipia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+    }
+    .linea-serendipia .linea{
+        display: none;
+    }
+    .vertical-line, .container-scroll-menu{
+        display: none;
+    }
+    .siguenos{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .siguenos > p{
+        display: none;
+    }
+    .siguenos a > ion-icon{
+        font-size: 40px;
+    }
+
+    .mySlides{
+        height: 80vh;
+    }
+    .contenido-slide{
+        overflow: hidden; 
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contenedor-slide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .imagenes-slide, .texto-slide{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+    .texto-slide{
+        font-size: 18px;
+    }   
+    .titulo-slide{
+        font-size: 36px;
+    }
+
+    .contacto{
+        height: calc(100vh*2);
+    }
+    .contenedor-about p{
+        margin: 0;
+    }
+    .contacto-seccion{
+        flex-direction: column;
+    }
+    .texto-form, .formulario{
+        max-width: 100%;
+        margin: 30px 0;
+    }
+    .contacto .titulo-servicios{
+        padding: 0;
+        margin-bottom: 30px;
+        height: 20vh;
+    }
+    .formulario{
+        width: 80%;
+    }
+
+        /* footer */
+    .pie-pagina{
+        height: 80vh;
+    }
+    
+    footer .containerfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .containerfooter .onfooter{ 
+        justify-content: center;
+        align-items: center;
+        margin-left: 0; 
+        margin-bottom: 10px;
+        width: 90%;
+        text-align: center;
+    }
+    .onfooter h3{
+        font-weight: 500;
+    }
+    .onfooter a{
+        text-decoration: none;
+        color: #D2B467;
+    }
+    .underfooter{
+        text-align: center;
+        margin: 40px;
+    }
+    
+}

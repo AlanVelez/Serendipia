@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      </head>
+    <title>Serendipia</title>
+</head>
+<body>
+    <!-- Menu de hamburguesa -->
+    <div class="menu-hamburguesa" id="menuHam">
+        <ion-icon name="exit-outline" onclick=cerrarMenu();></ion-icon>
+        <div class="contenido-menu">
+            <a href="#principal" class="opciones-menu">Inicio</a>
+            <a href="#servicios" class="opciones-menu">Servicios</a>
+            <a href="#acercade" class="opciones-menu">Acerca de</a>
+            <a href="#contacto" class="opciones-menu">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Menu scroll liena vertical -->
+    <div class="vertical-line"></div>
+    <div class="container-scroll-menu">
+       <a href="#principal"><span class="circle"></span></a>
+       <a href="#servicios"><span class="circle"></span></a>
+       <a href="#acercade"><span class="circle"></span></a>
+       <a href="#contacto"><span class="circle"></span></a>
+    </div>
+    
+    <!-- Contenedor de la pagina -->
+    <div class="contenedor">
+        <!-- Contenido principal -->
+        <div class="homepage" id="principal">
+            <main class="principal">
+                <!-- Cabezera con menu -->
+                <header class="menu-header">
+                    <!-- Contenedor del carrito y menu -->
+                    <div class="contenedor-menu">
+                        <a href="#" onclick="abrirMenu();"> <ion-icon name="menu-outline" ></ion-icon> </a>
+                        <a href="#"> <ion-icon name="bag-outline"></ion-icon> </a>
+
+                    </div>
+                    <!-- logotipo -->
+                    <div class="logo">
+                        <img src="img/Recurso 20.svg" alt="logoSerendipia">
+                    </div>
+                    
+                </header>
+                <!-- nombre y slogan -->
+                <section class="contenido">
+                    <div class="linea-serendipia animate__animated animate__fadeInUp">
+                        <div class="linea"></div><h1>SERENDIPIA</h1>
+                    </div>
+                    <h2 class="animate__animated animate__fadeInUp">Creando la vida de tus sueños</h2>
+                </section>
+                <section class="siguenos">
+                    <a href="https://www.instagram.com/serendipity_serendipia/?hl=es" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/Serendipia-112185224026132" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <p>Follow us</p>
+                </section>
+            </main>
+        </div>  
+
+        <!-- contenedor de servicios -->
+        <section class="services" id="servicios">
+            <div class="titulo-servicios">
+                <div class="linea"></div> <h2>Nuestros Servicios</h2>  <div class="linea"></div>
+            </div>
+
+            <!-- slide de servicios -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="container-slide">
+                        <div class="contenido-slide">
+                            <h3 class="titulo-slide">Decretos</h3>
+                            <div class="contenedor-slide">
+                                <div class="imagenes-slide">
+                                    <img src="img/decretos-tarot.jpg" alt="">
+                                </div>
+                                <p class="texto-slide">
+                                    En este terreno metafísico, los decretos son estados que funcionan como oraciones dirigidas a la reprogramación de nuestras mentes con el fin de conseguir nuestros anhelos. <br>
+                                    <a href="https://wa.me/528110669690/?text=Quiero saber más..." target="_blank"><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="contenido-slide">
+                        <h3 class="titulo-slide">Reiki</h3>
+                        <div class="contenedor-slide">
+                            <div class="imagenes-slide">
+                                <img src="img/katherine-hanlon-WAm_HaI4W2E-unsplash.jpg" alt="">
+                            </div>
+                            <p class="texto-slide">
+                                Reiki es un tipo de medicina alternativa japonesa considerada como pseudoterapia​​​ englobada dentro de las "terapias de energía". <br>
+                                <a href="https://wa.me/528110669690/?text=Quiero saber más..." target="_blank"><ion-icon name="arrow-forward-outline"></ion-icon></a>                            </p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="contenido-slide">
+                        <h3 class="titulo-slide">Mensajes de angeles</h3>
+                        <div class="contenedor-slide">
+                            <div class="imagenes-slide">
+                                <img src="img/aboutus-serendipia.jpg" alt="">
+                            </div>
+                            <p class="texto-slide">
+                                ¿Cómo llegan los mensajes de los ángeles?
+                                El mejor momento para recibir mensajes de los ángeles es la meditación, cuando la mente está totalmente focalizada en la energía angelical y para el ángel en cuestión es más fácil comunicarse contigo. Deja la mente en blanco durante unos minutos y relájate. <br>
+                                <a href="https://wa.me/528110669690/?text=Quiero saber más..." target="_blank"><ion-icon name="arrow-forward-outline"></ion-icon></a>                              </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="contenido-slide">
+                        <h3 class="titulo-slide">Flores de Bach</h3>
+                        <div class="contenedor-slide">
+                            <div class="imagenes-slide">
+                                <img src="img/fondo-2.jpg" alt="">
+                            </div>
+                            <p class="texto-slide">
+                                Las Flores de Bach son una serie de esencias naturales utilizadas para tratar diversas situaciones emocionales, como miedos, soledad, desesperación, estrés, depresión y obsesiones. <br>
+                                <a href="https://wa.me/528110669690/?text=Quiero saber más..." target="_blank"><ion-icon name="arrow-forward-outline"></ion-icon></a>                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>            
+        </section>
+        <!-- contacto y frase -->
+        <article class="recomendaciones">
+            <section class="aboutus" id="acercade">
+                <div class="contenedor-about">
+                    <div class="titulo-servicios">
+                        <div class="linea"></div> <h2>Sobre nosotros</h2>  <div class="linea"></div>
+                    </div>
+                    <p>
+                        Serendipia es un negocio dedicado a prestar servicios espirituales y productos que ayudan a la relagacion de la mente y el cuerpo. Nos encanta complacer a nuestros clientes, nuestros servicios son 100% personalizados a las necesidades que querieran. Creemos firmemente que una vida saludable y prospera esta acompañada de un lado espiritual, y que mejor que Serendipia para ayudarte a crear la vida de tus sueños.
+
+                    </p>
+                </div>
+            </section>
+            <section class="frase">
+                <p>"Me alegro de saber que cuento con el poder de mi mente para usarlo de manera en que yo decida."</p>
+                <img src="img/Recurso 5.svg" alt="">
+            </section>
+        </article>
+
+        <!-- seccion de contacto -->
+        <article class="contacto" id="contacto">
+            <section class="titulo-servicios">
+                <div class="linea"></div> <h2>Contacto</h2><div class="linea"></div>
+            </section>
+            <section class="contacto-seccion">
+                <div class="texto-form">
+                    <h3>¿Quieres algo mas personal?</h3>
+                    <p>Envianos un correo electronico y nos pondremos en contacto de inmediato para brindarte más informacion especifica y una cotizacion personalizada.</p>
+                </div>
+                <form action="enviar.php" method="post" class="formulario">
+
+                    <label for="fname">Nombres</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+                    
+                    <label for="lname">Apellidos</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Tus apellidos..">
+                    
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Tu email..">
+
+                    
+                    <label for="subject">Asunto</label>
+                    <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:100px"></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </article>
+
+        <!-- seccion pie de pagina -->
+        <footer class="pie-pagina">
+            <div class="containerfooter">
+                <section class="onfooter">
+                    <img src="img/Recurso 5.svg" alt="" width="60px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus ullam et temporibus sed, cum possimus blanditiis veritatis ratione voluptas voluptatem voluptates nostrum. Veritatis dolorum facere exercitationem alias minus quae.</p>
+                </section>
+                <section class="onfooter"">
+                    <h3>Explore</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About us</a>
+                </section>
+                <section class="onfooter">
+                    <h3>Need Help?</h3>
+                    <a href="#">Costumer service</a>
+                    <a href="#">Product</a>
+                </section>
+                <section class="onfooter">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of </a>
+                    <a href="#">Contract</a>
+                </section>
+            </div>
+            
+            <section class="underfooter">
+                All rights reserved by &copy;Serendipia 2021
+            </section>
+        </footer>
+    </div>
+
+
+    <!-- Codigo Java Script -->
+    <script src="js/appweb.js"></script>
+
+    <!-- Iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
